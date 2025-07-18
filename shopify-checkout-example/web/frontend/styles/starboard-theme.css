@@ -1,0 +1,365 @@
+/* Starboard Watersports Theme for Checkout Extensions */
+
+:root {
+  /* Starboard Brand Colors */
+  --starboard-ocean-blue: #0066CC;
+  --starboard-eco-green: #00B386;
+  --starboard-light-blue: #E6F3FF;
+  --starboard-dark-blue: #004299;
+  --starboard-teal: #20B2AA;
+  --starboard-wave-gray: #F8F9FA;
+  
+  /* Typography */
+  --starboard-font-family: 'Helvetica Neue', Arial, sans-serif;
+  --starboard-heading-weight: 600;
+  --starboard-text-weight: 400;
+  
+  /* Spacing */
+  --starboard-spacing-xs: 4px;
+  --starboard-spacing-sm: 8px;
+  --starboard-spacing-md: 16px;
+  --starboard-spacing-lg: 24px;
+  --starboard-spacing-xl: 32px;
+  
+  /* Border Radius */
+  --starboard-radius-sm: 4px;
+  --starboard-radius-md: 8px;
+  --starboard-radius-lg: 12px;
+  
+  /* Shadows */
+  --starboard-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --starboard-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --starboard-shadow-lg: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Dealer Assignment Section */
+.starboard-dealer-section {
+  background: linear-gradient(135deg, var(--starboard-light-blue) 0%, #ffffff 100%);
+  border: 2px solid var(--starboard-ocean-blue);
+  border-radius: var(--starboard-radius-lg);
+  padding: var(--starboard-spacing-lg);
+  margin: var(--starboard-spacing-md) 0;
+  box-shadow: var(--starboard-shadow-md);
+}
+
+.starboard-dealer-section h2 {
+  color: var(--starboard-dark-blue);
+  font-family: var(--starboard-font-family);
+  font-weight: var(--starboard-heading-weight);
+  margin-bottom: var(--starboard-spacing-md);
+  display: flex;
+  align-items: center;
+  gap: var(--starboard-spacing-sm);
+}
+
+.starboard-dealer-section h2::before {
+  content: "🏄‍♂️";
+  font-size: 1.5em;
+}
+
+/* Dealer Cards */
+.starboard-dealer-card {
+  background: white;
+  border: 1px solid var(--starboard-ocean-blue);
+  border-radius: var(--starboard-radius-md);
+  padding: var(--starboard-spacing-md);
+  margin-bottom: var(--starboard-spacing-md);
+  box-shadow: var(--starboard-shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.starboard-dealer-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--starboard-shadow-lg);
+  border-color: var(--starboard-eco-green);
+}
+
+.starboard-dealer-card.selected {
+  border-color: var(--starboard-eco-green);
+  background: linear-gradient(135deg, #f0fff4 0%, white 100%);
+  box-shadow: 0 0 0 2px var(--starboard-eco-green);
+}
+
+.starboard-dealer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--starboard-spacing-sm);
+}
+
+.starboard-dealer-name {
+  color: var(--starboard-dark-blue);
+  font-weight: var(--starboard-heading-weight);
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.starboard-dealer-address {
+  color: #666;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+.starboard-dealer-distance {
+  background: var(--starboard-ocean-blue);
+  color: white;
+  padding: var(--starboard-spacing-xs) var(--starboard-spacing-sm);
+  border-radius: var(--starboard-radius-sm);
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+/* Specialty Badges */
+.starboard-specialty-badges {
+  display: flex;
+  gap: var(--starboard-spacing-xs);
+  flex-wrap: wrap;
+  margin: var(--starboard-spacing-sm) 0;
+}
+
+.starboard-badge {
+  padding: var(--starboard-spacing-xs) var(--starboard-spacing-sm);
+  border-radius: var(--starboard-radius-sm);
+  font-size: 0.75em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.starboard-badge--windsurf {
+  background: var(--starboard-ocean-blue);
+  color: white;
+}
+
+.starboard-badge--sup {
+  background: var(--starboard-eco-green);
+  color: white;
+}
+
+.starboard-badge--wingfoil {
+  background: var(--starboard-teal);
+  color: white;
+}
+
+.starboard-badge--certification {
+  background: var(--starboard-wave-gray);
+  color: var(--starboard-dark-blue);
+  border: 1px solid var(--starboard-ocean-blue);
+}
+
+/* Rating Stars */
+.starboard-rating {
+  display: flex;
+  align-items: center;
+  gap: var(--starboard-spacing-xs);
+  font-size: 0.9em;
+  color: #ffa500;
+}
+
+.starboard-rating .reviews {
+  color: #666;
+  font-size: 0.8em;
+}
+
+/* Consultation Section */
+.starboard-consultation-section {
+  background: linear-gradient(135deg, #f0fff4 0%, white 100%);
+  border: 1px solid var(--starboard-eco-green);
+  border-radius: var(--starboard-radius-md);
+  padding: var(--starboard-spacing-md);
+  margin-top: var(--starboard-spacing-md);
+}
+
+.starboard-consultation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--starboard-spacing-md);
+}
+
+.starboard-consultation-header h3 {
+  color: var(--starboard-dark-blue);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--starboard-spacing-xs);
+}
+
+.starboard-consultation-header h3::before {
+  content: "💬";
+}
+
+/* Buttons */
+.starboard-button {
+  background: var(--starboard-ocean-blue);
+  color: white;
+  border: none;
+  border-radius: var(--starboard-radius-md);
+  padding: var(--starboard-spacing-sm) var(--starboard-spacing-md);
+  font-family: var(--starboard-font-family);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--starboard-spacing-xs);
+}
+
+.starboard-button:hover {
+  background: var(--starboard-dark-blue);
+  transform: translateY(-1px);
+  box-shadow: var(--starboard-shadow-md);
+}
+
+.starboard-button--primary {
+  background: var(--starboard-eco-green);
+}
+
+.starboard-button--primary:hover {
+  background: #00a076;
+}
+
+.starboard-button--secondary {
+  background: white;
+  color: var(--starboard-ocean-blue);
+  border: 2px solid var(--starboard-ocean-blue);
+}
+
+.starboard-button--secondary:hover {
+  background: var(--starboard-light-blue);
+}
+
+.starboard-button--selected {
+  background: var(--starboard-eco-green);
+  color: white;
+}
+
+.starboard-button--selected::before {
+  content: "✅ ";
+}
+
+/* Form Fields */
+.starboard-field {
+  margin-bottom: var(--starboard-spacing-md);
+}
+
+.starboard-field label {
+  display: block;
+  color: var(--starboard-dark-blue);
+  font-weight: 500;
+  margin-bottom: var(--starboard-spacing-xs);
+}
+
+.starboard-field input,
+.starboard-field select,
+.starboard-field textarea {
+  width: 100%;
+  padding: var(--starboard-spacing-sm);
+  border: 1px solid #ddd;
+  border-radius: var(--starboard-radius-sm);
+  font-family: var(--starboard-font-family);
+  transition: border-color 0.3s ease;
+}
+
+.starboard-field input:focus,
+.starboard-field select:focus,
+.starboard-field textarea:focus {
+  outline: none;
+  border-color: var(--starboard-ocean-blue);
+  box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
+}
+
+/* Success Messages */
+.starboard-success-banner {
+  background: linear-gradient(135deg, #f0fff4 0%, #e6ffe6 100%);
+  border: 1px solid var(--starboard-eco-green);
+  border-radius: var(--starboard-radius-md);
+  padding: var(--starboard-spacing-md);
+  color: #2d5016;
+  margin: var(--starboard-spacing-md) 0;
+}
+
+.starboard-success-banner::before {
+  content: "✅ ";
+  font-size: 1.2em;
+}
+
+/* Info Messages */
+.starboard-info-banner {
+  background: var(--starboard-light-blue);
+  border: 1px solid var(--starboard-ocean-blue);
+  border-radius: var(--starboard-radius-md);
+  padding: var(--starboard-spacing-md);
+  color: var(--starboard-dark-blue);
+  margin: var(--starboard-spacing-md) 0;
+}
+
+.starboard-info-banner::before {
+  content: "ℹ️ ";
+  font-size: 1.2em;
+}
+
+/* Loading States */
+.starboard-loading {
+  display: flex;
+  align-items: center;
+  gap: var(--starboard-spacing-sm);
+  color: var(--starboard-ocean-blue);
+  font-style: italic;
+}
+
+.starboard-loading::before {
+  content: "🌊";
+  animation: wave 2s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .starboard-dealer-section {
+    padding: var(--starboard-spacing-md);
+    margin: var(--starboard-spacing-sm) 0;
+  }
+  
+  .starboard-dealer-header {
+    flex-direction: column;
+    gap: var(--starboard-spacing-sm);
+  }
+  
+  .starboard-consultation-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--starboard-spacing-sm);
+  }
+  
+  .starboard-specialty-badges {
+    justify-content: flex-start;
+  }
+}
+
+/* Accessibility */
+.starboard-button:focus,
+.starboard-dealer-card:focus {
+  outline: 2px solid var(--starboard-eco-green);
+  outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+  .starboard-dealer-section {
+    background: white !important;
+    box-shadow: none !important;
+    border: 1px solid #000 !important;
+  }
+  
+  .starboard-button {
+    background: white !important;
+    color: black !important;
+    border: 1px solid black !important;
+  }
+}

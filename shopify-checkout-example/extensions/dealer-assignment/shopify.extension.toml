@@ -1,0 +1,56 @@
+api_version = "2023-10"
+
+[[extensions]]
+type = "checkout_ui_extension"
+name = "dealer-assignment"
+handle = "starboard-dealer-assignment"
+
+[[extensions.targeting]]
+target = "purchase.checkout.block.render"
+
+[extensions.capabilities]
+api_access = true
+network_access = true
+
+[extensions.settings]
+[[extensions.settings.fields]]
+key = "title"
+type = "single_line_text_field"
+name = "Section Title"
+description = "Title displayed at the top of the dealer assignment section"
+
+[[extensions.settings.fields]]
+key = "enable_consultation_booking"
+type = "boolean"
+name = "Enable Consultation Booking"
+description = "Allow customers to book consultations with dealers"
+
+[[extensions.settings.fields]]
+key = "max_dealers_displayed"
+type = "number_integer"
+name = "Maximum Dealers Displayed"
+description = "Maximum number of dealers to show by default (before 'Show More' button)"
+
+[[extensions.settings.fields]]
+key = "require_dealer_selection"
+type = "boolean"
+name = "Require Dealer Selection"
+description = "Make dealer selection mandatory for checkout completion"
+
+[[extensions.settings.fields]]
+key = "enable_geolocation"
+type = "boolean"
+name = "Enable Geolocation"
+description = "Use customer's location to suggest nearby dealers"
+
+[[extensions.settings.fields]]
+key = "dealer_api_endpoint"
+type = "single_line_text_field"
+name = "Dealer API Endpoint"
+description = "URL for fetching dealer data (leave empty to use mock data)"
+
+[[extensions.settings.fields]]
+key = "supported_product_types"
+type = "multi_line_text_field"
+name = "Supported Product Types"
+description = "Product types that support dealer assignment (one per line)"

@@ -1,0 +1,68 @@
+{
+  "name": "starboard-checkout-dealer-assignment",
+  "version": "1.0.0",
+  "description": "Shopify Plus checkout customization for Starboard watersports equipment with dealer assignment functionality",
+  "main": "index.js",
+  "scripts": {
+    "dev": "shopify app dev",
+    "build": "shopify app build",
+    "deploy": "shopify app deploy",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "shopify",
+    "shopify-plus",
+    "checkout",
+    "dealer-assignment",
+    "watersports",
+    "starboard",
+    "windsurf",
+    "paddleboard",
+    "wingfoil"
+  ],
+  "author": "Starboard Development Team",
+  "license": "MIT",
+  "dependencies": {
+    "@shopify/checkout-ui-extensions": "^0.27.0",
+    "@shopify/checkout-ui-extensions-react": "^0.27.0",
+    "@shopify/admin-api-client": "^0.2.0",
+    "@shopify/storefront-api-client": "^0.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "graphql": "^16.6.0",
+    "date-fns": "^2.29.3",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@shopify/cli": "^3.50.0",
+    "@shopify/theme": "^3.50.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/uuid": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "eslint": "^8.39.0",
+    "eslint-plugin-react": "^7.32.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^29.5.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/jest-dom": "^5.16.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/starboard/checkout-dealer-assignment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/starboard/checkout-dealer-assignment/issues"
+  },
+  "homepage": "https://github.com/starboard/checkout-dealer-assignment#readme"
+}
