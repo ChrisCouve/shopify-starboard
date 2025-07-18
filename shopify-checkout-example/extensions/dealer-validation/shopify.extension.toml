@@ -1,0 +1,23 @@
+api_version = "2023-10"
+
+[[extensions]]
+type = "function"
+name = "dealer-validation"
+handle = "starboard-dealer-validation"
+
+[extensions.build]
+command = "npm run build"
+path = "dist/index.wasm"
+
+[[extensions.targeting]]
+target = "purchase.validation.run"
+
+[extensions.input.variables]
+namespace = "starboard"
+key = "dealer_validation_enabled"
+
+[extensions.ui.paths.create]
+path = "/app/dealer-validation"
+
+[extensions.ui.paths.details]
+path = "/app/dealer-validation/[id]"
